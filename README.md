@@ -1,3 +1,4 @@
+# Notes
 * 124 team in the game but only 50 are controllable and divided up by player
 * 6 categories of teams (EPL, CH, L1+L2, NL + NLNS, North+South+Isthmian, Others)
 * Owners cards have indicative gate value.
@@ -19,4 +20,3 @@
     * Add ability to ensure your favourite teams get through
     * Add ability to add your own teams
     * Multiplayer with net code
-
