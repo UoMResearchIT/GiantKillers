@@ -35,8 +35,8 @@ namespace GiantKillers.Utils
 
                 using (var sr = new StreamReader(stream))
                 {
-                    var line = sr.ReadLine();
-                    while (line != null)
+                    string line;
+                    while ((line = sr.ReadLine()) != null)
                     {
                         var teamData = line.Split(',');
                         if (teamData.Length != 5) continue;
@@ -53,6 +53,11 @@ namespace GiantKillers.Utils
                 knownTeams = teams.AsReadOnly();
             };
 
+        }
+
+        internal IEnumerable<TeamModel> GetTeams()
+        {
+            return new List<TeamModel>(knownTeams);
         }
     }
 }

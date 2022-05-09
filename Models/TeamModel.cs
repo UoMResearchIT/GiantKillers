@@ -20,6 +20,8 @@ namespace GiantKillers.Models
 
         // STATUS //
 
+        public int OwningPlayer { get; set; }
+
         public Money TotalEarnings { get; private set; }
 
         // TODO: There will be more status related things here when we work out what we need
@@ -32,6 +34,7 @@ namespace GiantKillers.Models
             int groundCapacity
         )
         {
+            League = league;
             Name = name;
             Category = category;
             GateValue = gateValue;
